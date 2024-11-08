@@ -1,0 +1,132 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 30px 15px;
+    color: #555;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 30px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
+tr:hover {
+    background-color: #e9ecef;
+}
+
+.actions {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a.edit {
+    background-color: #28a745;
+    margin-right: 10px;
+}
+
+a.edit:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+a.delete {
+    background-color: #dc3545;
+}
+
+a.delete:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+/* Botón de agregar producto */
+div a {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+div a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    table {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    th, td {
+        padding: 12px 10px;
+        font-size: 14px;
+    }
+
+    a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    div a {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
